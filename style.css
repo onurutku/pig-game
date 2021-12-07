@@ -1,0 +1,167 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62%;
+}
+body {
+  background: linear-gradient(to bottom right, #ba2e39, #75357f);
+  height: 100vh;
+}
+.container {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.container-left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.lightpink {
+  background: linear-gradient(to bottom right, #e0adb4, #aa7ca8);
+}
+.darkpink {
+  background: linear-gradient(to bottom right, #c2798e, #aa7ca8);
+}
+.container-right {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.score {
+  margin-top: 30rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c7365f;
+  padding: 3rem;
+  border-radius: 1rem;
+  color: white;
+}
+h5 {
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+h1 {
+  margin-top: 2rem;
+  font-size: 10rem;
+  color: #c7365f;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-weight: 100;
+}
+#dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+.top-buttons {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+}
+.bottom-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.btn {
+  border: none;
+  border-radius: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.shadowin {
+  transform: translateY(3px);
+  box-shadow: 1px 1px 13px gray;
+  animation-name: moveIn;
+  animation-duration: 0.2s;
+}
+.shadowout {
+  transform: translateY(0px);
+  box-shadow: none;
+  animation-name: moveOut;
+  animation-duration: 0.2s;
+}
+.top-buttons {
+  margin-bottom: 20rem;
+}
+.fade {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  from {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+  to {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 13px gray;
+  }
+}
+@keyframes moveOut {
+  from {
+    transform: translateY(3px);
+    box-shadow: 1px 1px 13px gray;
+  }
+  to {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+}
